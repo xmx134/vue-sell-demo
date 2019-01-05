@@ -1,13 +1,39 @@
 border-1px($color)
-    position: relative
-    &:after
-        display: block
-        position: absolute
-        width: 100%
-        left: 0
-        bottom: 0
-        border-top: 1px solid $color
-        content: ' '
+  position: relative
+  &:after
+      display: block
+      position: absolute
+      width: 100%
+      left: 0
+      bottom: 0
+      border-top: 1px solid $color
+      content: ' '
+
+border-1px-top($color)
+  position: relative
+  &:before
+      display: block
+      position: absolute
+      width: 100%
+      left: 0
+      top: 0
+      border-top: 1px solid $color
+      content: ' '
+
+border-1px-right($color)
+  position: relative
+  &:after
+      display: block
+      position: absolute
+      height : 100%
+      right: 0
+      top: 0
+      border-right: 1px solid $color
+      content: ' '
+
+border-none()
+  &:after
+    display none
 
 bg-image($url)
   background-image: url($url + "@2x.png")

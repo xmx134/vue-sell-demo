@@ -12,7 +12,7 @@
         <router-link to="/seller">商家</router-link>
       </div>
     </div>
-    <router-view></router-view>
+    <router-view :seller="seller"></router-view>
   </div>
 </template>
 
@@ -26,8 +26,7 @@ export default {
   name: 'app',
   data () {
     return {
-      seller: {
-      }
+      seller: {}
     }
   },
   created () {
